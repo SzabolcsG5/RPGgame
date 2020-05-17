@@ -8,8 +8,11 @@
 #define WIN32_LEAN_AND_MEAN
 char** CreateMap(char* filename);
 void drawMap(char** map);
-void Movement(char** map);
+void drawR(char** map);
+void starterSettings();
 void startgame();
+void newGame();
 bool Can( char* element);
 void Nextmap();
+void Movement(char** map);
 #endif //!MAP_H
