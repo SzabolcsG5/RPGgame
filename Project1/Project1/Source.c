@@ -7,6 +7,7 @@
 #include "Map.h"
 int main()
 {
+   
    startgame();
    return 0;
 	
