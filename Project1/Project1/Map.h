@@ -11,7 +11,7 @@ void drawMap(char** map);
 void starterSettings();
 void startgame();
 void newGame();
-bool Can( char* element);
+bool Can( char* tile);
 void Nextmap();
 void Movement(char** map);
 void GenerateMap(char* filename);

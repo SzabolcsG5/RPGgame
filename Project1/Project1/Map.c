@@ -145,30 +145,30 @@ void newGame()
 	//game logic
 	Movement(map);
 }
-bool Can(char* element)
+bool Can(char* tile)
 {   //checking movement conditions
-	if ('1' == element) {
+	if ('1' == tile) {
 
 		printf("Can't go through that");
 		Sleep(1000);
 		return false;
 	}
-	else if ('3' == element) {
+	else if ('3' == tile) {
 		if (playerHP == 1) { //condition to slay the player in case they have 1 life
 			choice = 0;
 		}
 		playerHP--;
 		return true;
 	}
-	else if ('2' == element) {
+	else if ('2' == tile) {
 		playerHP++ ;
 		return true;
 	}
-	else if ('4' == element) {
+	else if ('4' == tile) {
 		Nextmap(); //the "victory" tile
 		return false;
 	}
-	if ('5' == element) {
+	if ('5' == tile) {
 
 		if (playerHP == 2 || playerHP==1) {
 			choice = 0;
@@ -176,7 +176,7 @@ bool Can(char* element)
 		playerHP=playerHP-2; //a harder enemy that deals more damage
 		return true;
 	}
-	if ('6' == element) {
+	if ('6' == tile) {
 
 		printf("Can't go through that");
 		if (playerHP == 1) { 
